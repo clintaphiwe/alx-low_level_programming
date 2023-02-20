@@ -1,12 +1,10 @@
 #include <stdio.h>
-
 /**
  * main - This is the entry point.
  * Return 0 (Success)
  */
 int main(void)
-{ 
-	char a;
+{	char a;
 	int b;
 	long int c;
 	long long int d;
