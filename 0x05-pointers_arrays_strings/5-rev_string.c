@@ -6,7 +6,7 @@
  * Return: 0 (Success)
  */
 
-void rev_string(char *z)
+void rev_string(char *ink)
 {
 int q, z, a;
 char rev;
