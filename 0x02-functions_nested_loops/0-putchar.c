@@ -1,12 +1,13 @@
 #include "main.h"
 
-/** main - Entry point
+/**
+ * main - Entry point
  * Return: 0 (Success)
  */
 
 int main(void)
 {
-_putchar(95); /*95 isthe ascii code for the '_' symbol*/
+_putchar(95); /*95 is the asci code that is for a  '_' symbol*/
 _putchar('p');
 _putchar('u');
 _putchar('t');
