@@ -1,26 +1,27 @@
 #include "main.h"
 
 /**
- * rev_string -Function that prints a string in reverse
+ * main - Entry point
+ * rev_string -	Function that prints a string in reverse
  * @z: Pointer that is used
  * Return: 0 (Success)
  */
 
-void rev_string(char *ink)
+void rev_string(char *k)
 {
 int q, z, a;
-char rev;
+char foo;
 
-for (q = 0; z[q] != '\0'; z++)
+for (q = 0; k[q] != '\0'; q++)
 ;
-ink = 0;
+z = 0;
 a = q / 2;
 
 while (a--)
 {
-rev = z[q - ink - 1];
-z[q - ink - 1] = z[ink];
-z[ink] = rev;
-ink++;
+foo = k[q - z - 1];
+k[q - z - 1] = k[z];
+k[z] = foo;
+z++;
 }
 }
