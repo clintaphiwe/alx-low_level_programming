@@ -4,7 +4,7 @@
  * *_strcat - Function that concatenates @src to @dest
  * @src: The source string we use to append to @dest
  * @dest: The string to be concatenated with
- * Return Returns to the resulting string  (Success)
+ * Return: Returns to the resulting string  (Success)
  */
 
 char *_strcat(char *dest, char *src)
