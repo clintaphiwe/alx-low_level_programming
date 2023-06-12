@@ -4,6 +4,8 @@
 
 /**
  * main - Entry point
+ * _islower - checks whether the passed letter is a lower case or upper case
+ * int c - The parameter that will be passed to the function
  * Return: 0 (Success)
  */
 
