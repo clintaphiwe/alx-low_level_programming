@@ -1,21 +1,16 @@
 #include "main.h"
 
 /**
- * main - Entry Point
+ * is_alpha - Function  checks whether the input is alpha or not
+ * @c: input to be checked
  * Return: 0 (Success)
  */
-int main(void)
-{
-    int r;
 
-    r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
+int is_alpha(int c)
+{
+if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+{
+return (1);
+}
+return (0);
 }
