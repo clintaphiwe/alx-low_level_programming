@@ -1,21 +1,14 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * main - Entry point
+ * _putchar - writes the charater c to stdout
+ * @c: The character to print
  * Return: 0 (Success)
+ * On error, -1 is returned and errno is set appropriately
  */
 
-int main(void)
+int _putchar (char c)
 {
-_putchar(95); /*95 is the asci code that is for a  '_' symbol*/
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-
-return (0);
+return (write(1, &c, 1));
 }
