@@ -4,19 +4,18 @@
  */
 void print_alphabet_x10(void)
 {
-	int i = 0;
-	char ch;
-
-	while (i <= 10)
-	{
-		ch = 'a';
-		while (ch <= 'z')
-		{
-			putchar(ch);
-			ch++;
-		}
-		putchar('\n');
-		i++;
-	}
+int i = 0;
+char ch;
+while (i <= 10)
+{
+ch = 'a';
+while (ch <= 'z')
+{
+putchar(ch);
+ch++;
+}
+putchar('\n');
+i++;
+}
 }
 
