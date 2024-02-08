@@ -13,7 +13,7 @@ for (c = 0; c <= 9; c++)
 {
 for (r = 0; r <= 9; r++)
 {
-printf("%3d ", c * r);
+printf("%3d", c * r);
 if (r != 9)
 printf(",");
 }
