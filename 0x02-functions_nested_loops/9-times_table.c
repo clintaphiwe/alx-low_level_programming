@@ -13,8 +13,10 @@ for (c = 0; c <= 9; c++)
 {
 for (r = 0; r <= 9; r++)
 {
-printf("%2d,", c * r);
+printf("%4d ", c * r);
+if (r != 9)
+printf(", ");
 }
 printf("\n");
 }
-}
+
