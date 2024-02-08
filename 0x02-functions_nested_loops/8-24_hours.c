@@ -20,9 +20,11 @@ printf("%02d:%02d\n", hour, minute);
 
 void jack_bauer(void)
 {
-for (int hour = 0; hour < 24; hour++)
+int hour;
+int minute;
+for (hour = 0; hour < 24; hour++)
 {
-for (int minute = 0; minute < 60; minute++)
+for (minute = 0; minute < 60; minute++)
 {
 print_time(hour, minute);
 }
