@@ -8,15 +8,20 @@
 
 void times_table(void)
 {
-int c, r;
-for (c = 0; c <= 9; c++)
-{
-for (r = 0; r <= 9; r++)
-{
-printf("%3d", c * r);
-if (r != 9)
-printf(",");
+  int c, r;
+  for (c = 0; c <= 9; c++){
+    for (r = 0; r <= 9; r++){
+      if (!(r > 0))
+        printf("%d", c * r);
+        else
+        printf("%3d", c * r);
+      if (r != 9)
+        printf(",");
+    }
+  printf("\n");
+  }
 }
-printf("\n");
-}
+
+int main(){
+  times_table();
 }
