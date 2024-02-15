@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * print_chess - Prints the chess board
+ * print_chessboard - Prints the chess board
  * @a: the board to be printed
 */
 
-void print_chess(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 for (int i =  0; i < 8; i++)
 {
