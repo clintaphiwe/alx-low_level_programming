@@ -1,0 +1,1 @@
+In this folder I have functions that are moslty focused on bit maipulation and also functions that are used for tracking the state of the simulation.
