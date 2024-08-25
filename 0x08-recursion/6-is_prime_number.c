@@ -1,50 +1,30 @@
-#include <stdio.h>
-#include <math.h>
+#include "main.h"
 
-int is_prime_number(int n, int i)
+/**
+ * is_prime_helper - A helper function to check for prime recursively.
+ * @n: The number to check.
+ * @i: The current divisor to check.
+ *
+ * Return: 1 if n is prime, 0 otherwise.
+ */
+int is_prime_helper(int n, int i)
 {
-    if (n <= 1)
-    {
-        return 0;
-    }
-    if (n == 2)
-    {
-        return 1;
-    }
-    if (n % 2 == 0)
-    {
-        return 0;
-    }
-    if (i * i > n)
-    {
-        return 1;
-    }
-    if (n % i == 0)
-    {
-        return 0;
-    }
-    return is_prime_number(n, i + 2);
+if (i * i > n)  /* If i squared is greater than n, no divisors left to check */
+return (1);
+if (n % i == 0)  /* If n is divisible by i, it's not a prime number */
+return (0);
+return (is_prime_helper(n, i + 1));  /* Recursively check the next divisor */
 }
 
-int main(void)
+/**
+ * is_prime_number - Checks if an integer is a prime number.
+ * @n: The number to check.
+ *
+ * Return: 1 if n is a prime number, 0 otherwise.
+ */
+int is_prime_number(int n)
 {
-    int r;
-
-    r = is_prime_number(1);
-    printf("%d\n", r);
-    r = is_prime_number(1024);
-    printf("%d\n", r);
-    r = is_prime_number(16);
-    printf("%d\n", r);
-    r = is_prime_number(17);
-    printf("%d\n", r);
-    r = is_prime_number(25);
-    printf("%d\n", r);
-    r = is_prime_number(-1);
-    printf("%d\n", r);
-    r = is_prime_number(113);
-    printf("%d\n", r);
-    r = is_prime_number(7919);
-    printf("%d\n", r);
-    return (0);
+if (n <= 1)  /* 0 and 1 are not prime numbers */
+return (0);
+return (is_prime_helper(n, 2));  /* Start checking divisors from 2 */
 }
